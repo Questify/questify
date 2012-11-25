@@ -1,0 +1,25 @@
+{
+  "name": "questify",
+  "description": "Location-based games will never be the same.",
+  "author": "Questify",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "export NODE_PATH=./lib;node_modules/.bin/node-dev server.coffee",
+    "test": "node_modules/.bin/mocha -r should -R spec --compilers coffee:coffee-script"
+  },
+  "dependencies": {
+    "coffee-script": "1.4.x",
+    "express": "3.0.x",
+    "jade": "0.27.x",
+    "mongoose": "3.4.x",
+    "nib": "*",
+    "stylus": "0.30.x",
+    "underscore": "1.4.x"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "node-dev": "*",
+    "should": "*"
+  }
+}
