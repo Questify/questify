@@ -18,8 +18,13 @@
     "underscore": "1.4.x"
   },
   "devDependencies": {
+    "commander": "*",
     "mocha": "*",
     "node-dev": "*",
     "should": "*"
+  },
+  "bin": {
+    "questify": "./bin/questify",
+    "questify-api": "./lib/api-v1/bin/questify-api"
   }
 }

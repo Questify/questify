@@ -1,12 +1,18 @@
 
 # ### Module dependencies.
 
-app   = require './config'
-api   = require 'api-v1'
+app     = require './config'
+
+
+# # GET /
+#
+# The official homepage
+
+app.use '/', require 'home'
 
 
 # # RESTapi's
 #
 
-app.use '/api/v1/', api
+app.use '/api/v1/', require 'api-v1'
 

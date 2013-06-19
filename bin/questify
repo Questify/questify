@@ -1,0 +1,31 @@
+#!/usr/bin/env coffee
+
+
+# ### Module dependencies.
+
+program = require 'commander'
+pkg     = require '../package'
+spawn   = require('child_process').spawn
+
+
+
+# # Usage: questify [-vq]
+
+program
+  .version(pkg.version)
+
+
+program
+  .command('api *')
+  .description('interact with the REST-api')
+  .action (cmd, args) ->
+    spawn "questify-api", args, stdio: 'inherit', customFds: [0, 1, 2]
+
+
+
+# make program actionable by parsing
+# arguments passed.
+
+program
+  .parse process.argv
+
