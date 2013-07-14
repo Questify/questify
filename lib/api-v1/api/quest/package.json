@@ -1,0 +1,25 @@
+{
+  "name": "api-quest",
+  "author": "Henrik Kjelsberg <hkjels@me.com>",
+  "description": "",
+  "version": "0.0.01",
+  "private": true,
+  "scripts": {
+    "preinstall": "sudo easy_install pygments",
+    "prepublish": "node_modules/.bin/docco $(ls **/*.coffee | grep -v node_modules)",
+    "start": "node_modules/.bin/node-dev api.coffee",
+    "test": "node_modules/.bin/mocha -r should -R spec --compilers coffee:coffee-script"
+  },
+  "devDependencies": {
+    "coffee-script": "1.4.x",
+    "docco": "*",
+    "express": "3.0.x",
+    "jade": "*",
+    "lingo": "*",
+    "mocha": "*",
+    "mongoose": "3.4.x",
+    "node-dev": "*",
+    "should": "*"
+  },
+  "main": "api.coffee"
+}

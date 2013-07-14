@@ -1,7 +1,7 @@
 
 # ### Module dependencies.
 
-app     = require './config'
+app     = require './server'
 
 
 # # GET /
@@ -9,7 +9,7 @@ app     = require './config'
 # The official homepage
 
 app.use '/', require 'home'
-app.use '/', require 'editor'
+# app.use '/', require 'editor'
 
 
 # # RESTapi's

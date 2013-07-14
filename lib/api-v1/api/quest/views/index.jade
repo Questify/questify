@@ -1,0 +1,13 @@
+
+table.table
+  thead
+    th= _.t('title')
+    th= _.t('description')
+    th= _.t('author')
+  tbody
+    each quest in quests
+      tr
+        td= quest.title
+        td= quest.description
+        td= quest.author
+
