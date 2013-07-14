@@ -1,0 +1,14 @@
+{
+  "name": "editor",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "coffee-script": "1.4.x",
+    "docco": "*",
+    "express": "3.0.x",
+    "mocha": "*",
+    "node-dev": "*",
+    "should": "*"
+  },
+  "main": "editor.coffee"
+}
