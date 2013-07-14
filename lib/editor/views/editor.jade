@@ -1,27 +1,26 @@
-link(rel="stylesheet", href="/stylesheets/style.css")
-link(rel="stylesheet", href="/stylesheets/quest.css")
-
-#public
-  #container
-    #eventmenu.menu
-      div.menuitem#event_add Add event
-      div.menuitem#delete Delete
-  #editarea
-    #eventlist
-      h3 events
-      table.eventlist
-        tr
-          th id
-          th title
-    #eventinformation
-      h2 edit event
-      div select event..
-    #conditionlist
-      h3 conditions
-    #consequencelist
-      h3 consequences
-  script
-    head.js("http://www.html5canvastutorials.com/libraries/kinetic-v3.10.4.js")
-    head.js("http://code.jquery.com/jquery-1.7.2.min.js")
-    head.js("/javascripts/_/tree.js")
-    head.js("/javascripts/_/create.js")
+extends layout
+block body
+  div
+    #public
+      #container
+        #eventmenu.menu
+          div.menuitem#event_add Add event
+          div.menuitem#delete Delete
+      #editarea
+        #eventlist
+          h3 events
+          table.eventlist
+            tr
+              th id
+              th title
+        #eventinformation
+          h2 edit event
+          div select event..
+        #conditionlist
+          h3 conditions
+        #consequencelist
+          h3 consequences
+      script
+        head.js("http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.5.4.min.js")
+        head.js("/javascripts/_/tree.js")
+        head.js("/javascripts/_/create.js")

@@ -9,7 +9,7 @@ app     = require './server'
 # The official homepage
 
 app.use '/', require 'home'
-# app.use '/', require 'editor'
+app.use '/editor', require 'editor'
 
 
 # # RESTapi's

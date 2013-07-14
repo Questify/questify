@@ -17,6 +17,6 @@ app.use express.methodOverride()
 app.use app.router
 
 
-app.get '/editor', (req, res) ->
+app.get '/', (req, res) ->
   res.render('editor')
 
