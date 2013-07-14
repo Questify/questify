@@ -1,6 +1,0 @@
-[submodule "lib/api-v1"]
-	path = lib/api-v1
-	url = git@github.com:Questify/api-v1.git
-[submodule "public/images"]
-	path = public/images
-	url = git@github.com:Questify/images.git
